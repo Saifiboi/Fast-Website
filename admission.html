@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - FAST University</title>
+    <link rel="stylesheet"  href="./style.css">
+    <style>
+        .content h2 {
+            color: #004080;
+            text-align: center;
+        }
+        .content form {
+            display: flex;
+            flex-direction: column;
+        }
+        .content form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .content form input,.content form select,.content form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+        .content form button {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .content form button:hover {
+            background-color: #002060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="fast_logo.png" alt="FAST University Logo" width="100" height="100">
+        <h1>FAST University</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Admission Form</h2>
+        <form action="" method="">
+            <label>Full Name:</label>
+            <input type="text" name="fullName" required>
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" required>
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="male">
+                <label>Male</label>
+                <input type="radio" name="gender" value="female">
+                <label>Female</label>
+                <input type="radio" name="gender" value="other">
+                <label>Other</label>
+            </div>
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" required>
+            <label>Home Address:</label>
+            <textarea name="address" rows="3" required></textarea>
+            <label>Department Applying For:</label>
+            <select name="department" required>
+                <option value="computer_science">Computer Science</option>
+                <option value="cybersecurity">Cybersecurity</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="software_engineering">Software Engineering</option>
+                <option value="management">Management</option>
+            </select>
+            <label>Previous Education:</label>
+            <textarea name="previous_education" rows="3" required></textarea>
+            <label>Extracurricular Activities:</label>
+            <textarea name="extracurricular" rows="3"></textarea>
+            <label>
+                <input type="checkbox" name="agree" required> I agree to the terms and conditions.
+            </label>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 FAST University. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
